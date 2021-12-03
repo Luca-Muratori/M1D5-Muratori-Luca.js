@@ -1,5 +1,27 @@
- /* EXERCISE 5
- Write a function called "strivify" which accepts a string as a parameter.
- It should add the word "Strive" in front of the given string, but if the given 
- string already begins with "Strive", then it should just return the original string.
+/* EXERCISE 7
+ Write a function called "reverseString" which programmatically
+  reverses a given string (es.: Strive => evirtS).
 */
+
+
+function reverseString(str) {
+   
+    var splitString = str.split("");
+ 
+   
+    var reverseArray = splitString.reverse();
+ 
+   
+    var joinArray = reverseArray.join(""); 
+    
+    
+    console.log(joinArray)
+}
+ 
+reverseString("hello");
+
+ 
+
+
+
+

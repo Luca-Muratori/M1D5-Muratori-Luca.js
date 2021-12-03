@@ -85,7 +85,23 @@ boundary(n)?console.log('true'): console.log('false')
  Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
 */
 
-/* WRITE YOUR ANSWER HERE */
+/*
+function reverseString(str) {
+   
+    var splitString = str.split("");
+ 
+   
+    var reverseArray = splitString.reverse();
+ 
+   
+    var joinArray = reverseArray.join(""); 
+    
+    
+    console.log(joinArray)
+}
+ 
+reverseString("hello");
+*/
 
 /* EXERCISE 8
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
