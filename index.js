@@ -1,8 +1,11 @@
-let a=11
-let b=12
-const area=(a,b) =>{
-    return a*b
-}
+//Write a function called "crazySum" which receives two integers as parameters.
+ //It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
 
-result=area(a, b)
-console.log(result)
+ let a=1
+ let b=2
+
+ const crazySum =(a, b)=>{
+     return a+b
+ }
+ result=crazySum(a, b)
+ a===b?console.log(result*3): console.log(result)
