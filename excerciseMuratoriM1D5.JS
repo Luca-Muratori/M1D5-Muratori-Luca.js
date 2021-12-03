@@ -60,9 +60,9 @@ result>19?console.log(Math.abs(result*3)): console.log(result)
 */
 
 /* 
-let n=1
+let n=401
 const boundary= (n) =>{
-    return ((Math.abs(100 - n) <= 20) ||(Math.abs(400 - n) === 400));
+    return ((Math.abs(100 - n) > 20 && (Math.abs(100 - n)<100)) ||(Math.abs(400 - n) === 400));
 }
 boundary(n)?console.log('true'): console.log('false')
 */
