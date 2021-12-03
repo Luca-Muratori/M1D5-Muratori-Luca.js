@@ -12,7 +12,15 @@ ASSIGNMENT RULES
  Write a function called "area" which receives 2 parameters (l1, l2) and calculates the area of the associated rectangle.
 */
 
-/* WRITE YOUR ANSWER HERE */
+/* 
+let a=11
+let b=12
+const area=(a,b) =>{
+    return a*b
+}
+result=area(a, b)
+console.log(result)
+*/
 
 /* EXERCISE 2
  Write a function called "crazySum" which receives two integers as parameters.
