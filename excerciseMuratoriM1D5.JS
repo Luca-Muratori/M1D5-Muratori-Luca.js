@@ -86,21 +86,11 @@ boundary(n)?console.log('true'): console.log('false')
 */
 
 /*
-function reverseString(str) {
-   
-    var splitString = str.split("");
- 
-   
-    var reverseArray = splitString.reverse();
- 
-   
-    var joinArray = reverseArray.join(""); 
-    
-    
-    console.log(joinArray)
+const reverseString= function(phrase){
+  return phrase.split('').reverse('').join('')
 }
  
-reverseString("hello");
+console.log(reverseString("Strive"));
 */
 
 /* EXERCISE 8
