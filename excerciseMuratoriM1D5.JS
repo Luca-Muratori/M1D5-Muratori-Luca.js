@@ -7,6 +7,9 @@ ASSIGNMENT RULES
 - You can use the bash terminal, the VSCode terminal or the one embedded in your Operating System if you're using macOS or Linux.
 - The solution must be pushed to the repository and be available for the tutors by the end of the day (5PM CET)
 */
+const  exerciseStyle= function(input){
+    console.log(`\n----===${input}===----`)
+}
 
 /* EXERCISE 1
  Write a function called "area" which receives 2 parameters (l1, l2) and calculates the area of the associated rectangle.
@@ -72,14 +75,30 @@ boundary(n)?console.log('true'): console.log('false')
  It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const strivify=function(str){
+    let arrStr=str.split(' ')
+    
+    arrStr[0]==='Strive'?console.log(str): console.log(`Strive ${str} `)
+  }
+  
+  strivify('Strive is magnificent')
+  strivify('is Wonderfull')
 
 /* EXERCISE 6
  Write a function called "check3and7" which accepts a positive number as a parameter and checks if it is a multiple of 3 or a multiple of 7.
  HINT: Modulus Operator
 */
 
-/* WRITE YOUR ANSWER HERE */
+const check3and7= function(number){
+    number%3===0&&number%7===0?console.log(`${number} is a multiple of 7 and 3`):
+    number%3===0?console.log(`${number} is a multiple of 3`):
+    number%7===0?console.log(`${number} is a multiple of 7`):
+    console.log("Only positive number")
+  }
+  check3and7(14)
+  check3and7(21)
+  check3and7(-1)
+  check3and7('Molto')
 
 /* EXERCISE 7
  Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
@@ -93,23 +112,48 @@ const reverseString= function(phrase){
 console.log(reverseString("Strive"));
 */
 
-/* EXERCISE 8
+/* 
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
 */
+exerciseStyle('exercise 8')
+const mySentence = "const mySentence freeCodeCamp is an awesome resource";
+const words = mySentence.split(" ");
 
-/* WRITE YOUR ANSWER HERE */
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+};
+
+const word=words.join(" ");
+console.log(word);
+
+exerciseStyle('exercise 9')
 
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
 */
+const cutString=function (name){
+    return name.slice(1,-1)
+    
+       
+}
 
-/* WRITE YOUR ANSWER HERE */
+console.log(cutString('last character of a given string passed as a parameter'));
 
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
 
-/* WRITE YOUR ANSWER HERE */
+exerciseStyle('exercise 10')
+const giveMeRandom=function(n){
+    let array=[]
+    for(i=0;i<=n; i++){
+        array.push(Math.floor(Math.random() * 10));
+  }
+  return array;
+};
+console.log(giveMeRandom(5));
+
+
 
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
