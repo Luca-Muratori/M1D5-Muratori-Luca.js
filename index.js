@@ -1,17 +1,13 @@
-/* EXERCISE 6
- Write a function called "check3and7" which accepts a positive number
-  as a parameter and checks if it is a multiple of 3 or a multiple of 7.
- HINT: Modulus Operator
-*/
-
-
-const check3and7= function(number){
-  number%3===0&&number%7===0?console.log(`${number} is a multiple of 7 and 3`):
-  number%3===0?console.log(`${number} is a multiple of 3`):
-  number%7===0?console.log(`${number} is a multiple of 7`):
-  console.log("Only positive number")
-}
-check3and7(14)
-check3and7(21)
-check3and7(-1)
-check3and7('Molto')
+const matrixGenerator = function (x, y) {
+  let matrix = [];
+  for (let i = 0; i < y; i++) {
+    for (let j = 0; j < x; j++) {
+      matrix.push(i.toString() + j.toString());
+    }
+  }
+  let charsPerRow = matrix.length / y;
+  for (let z = 0; z < y; z++) {
+    console.log(matrix.slice(z * charsPerRow, (z + 1) * charsPerRow));
+  }
+};
+matrixGenerator(5,5)
